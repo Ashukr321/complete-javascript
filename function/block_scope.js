@@ -22,13 +22,11 @@ console.log(v);
 
 // console.log(x);// this will gives the error 
 
-
 {
     const data = "ashutosh kumar";
     console.log(data);
 }
 // console.log(data);
-
 
 
 
