@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window object</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-size: 4rem;
+        font-family: serif;
+        margin-top: 2rem;
+        letter-spacing: .2em;
+        text-shadow: 1px 1px 5px #4a52e9;
+
+    }
+    button{
+        padding: 10px 30px;
+        margin: 0 auto;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        outline: none;
+        background: #a650f1;
+        color: #fff;
+        letter-spacing: .1em;
+        border: none;
+        box-shadow: 1px 1px 5px #4a52e9;
+        cursor:pointer;
+        transition: .4s ease-in-out;
+    }
+
+    button:hover{
+        transform: scale(1.2);
+    }
+    button:active{
+        transform: scale(1);
+    }
+    p{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1rem;
+        text-shadow: 1px 1px 5px #4a52e9;
+        text-transform: capitalize;
+    }
+   
+   
+</style>
+<body>
+    <h1>window object </h1>
+    <div class="container">
+
+    <button id="btn" onclick="stop" >pause</button>
+
+    </div>
+    <p id="p"></p>  
+
+    <script src="./window.js"></script>
+</body>
+</html>
