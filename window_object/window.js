@@ -259,3 +259,43 @@ const b = document.getElementById("btn");
 // function goBack() {
 //   window.history.back()
 // }
+
+
+
+// session storage in the js 
+
+// this is similar to the localstorage in the js 
+
+// localstorage does't expire ,
+//  data in sessionStorage is cleared when the page session ends 
+
+
+// when a particular new tab in the browser is open then uniques page 
+// session is creaeted and assigned to that particular tab , that  session is valid only 
+// for that particular tab . container
+
+// when we close the tab then session is closed 
+
+
+// data stored in session is specific to the protocol of the pages in particular data 
+
+
+
+// same as localsotage we can also store the data in key value pair data 
+
+// here we see the example 
+
+const key = prompt("enter your key for session storage");
+const value = prompt("enter  the value of your key  for session storage ");
+
+
+const data = sessionStorage.setItem(key,value);
+alert(sessionStorage.getItem(key));
+
+
+
+// clear methods 
+// to clear all the data from the sessionstorage in the js 
+
+sessionStorage.clear();
+
