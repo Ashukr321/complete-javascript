@@ -172,41 +172,41 @@ top
 // location is not a function
 // this is object that is provided in to the window object
 
-const b = document.getElementById("btn");
-const b1 = document.getElementById("btn1");
+// const b = document.getElementById("btn");
+// const b1 = document.getElementById("btn1");
 
-const currentPage = window.location;
-console.log(typeof currentPage);
+// const currentPage = window.location;
+// console.log(typeof currentPage);
 
-const url = window.location.href; // this gives the url in string fomate
-console.log(typeof url);
+// const url = window.location.href; // this gives the url in string fomate
+// console.log(typeof url);
 
-b.addEventListener("click", () => {
-  location.href = "./about.html";
-});
+// b.addEventListener("click", () => {
+//   location.href = "./about.html";
+// });
 
 //  here we see the host name of the domain
-const hostName = window.location.hostname;
-console.log(hostName);
+// const hostName = window.location.hostname;
+// console.log(hostName);
 // string
 // window.js:218 127.0.0.1
 
 // pathname
-const path = window.location.pathname;
-console.log(path);
-const curl = `${hostName}${path}`;
-console.log(curl);
+// const path = window.location.pathname;
+// console.log(path);
+// const curl = `${hostName}${path}`;
+// console.log(curl);
 
 // protocol
 // this is set of rules that  provide the sequrity
 
-const protcol = location.protocol;
-console.log(protcol); // http
+// const protcol = location.protocol;
+// console.log(protcol); // http
 // http -> hyper text transfer protocol
 
 // location.assign
-const assign = location.assign;
-console.log(assign);
+// const assign = location.assign;
+// console.log(assign);
 
 // ⭐⭐⭐example 
 
@@ -217,3 +217,45 @@ console.log(assign);
 //   });
 // }
 
+
+// history 
+
+// here we see the window object history object in the js 
+
+// this is type of object that provided by the window object in the js 
+// window object sotre the information about the borwser history 
+
+// example of the history 
+// we can move  on browser forward and backward 
+// we  have two methods 
+// back()
+// forwars()
+
+
+
+//select the btn 
+const b = document.getElementById("btn");
+
+// here we used the history object 
+
+// const goback = () =>{
+//   b.addEventListener("click",()=>{
+//   location.href='./about.html';
+
+//   //  const data =  window.history.back();
+//   //  console.log(data);
+//   })
+// }
+
+
+// function newDoc() {
+//   b.addEventListener("click", () => {
+//     location.assign("https://www.w3schools.com/sql/default.asp");
+//   });
+// }
+
+
+
+// function goBack() {
+//   window.history.back()
+// }
