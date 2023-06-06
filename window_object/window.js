@@ -1,22 +1,21 @@
-// window  object is clinet side top level clint side javascript 
+// window  object is clinet side top level clint side javascript
 
-// window object represent the broswer windows 
-// it support the all browser 
+// window object represent the broswer windows
+// it support the all browser
 
 // const a = window;
 // console.log( typeof a);
-// // window is also itself a object type of data in the js 
+// // window is also itself a object type of data in the js
 
-// // window is also know  as this  
+// // window is also know  as this
 // const b = this;
 // console.log(b);
 
-
-// // window and this are same things in the js 
+// // window and this are same things in the js
 
 // console.log(window==this);
 
-// // window have many function and properties 
+// // window have many function and properties
 // console.log(typeof window.document);
 
 //  window object list are ...
@@ -43,10 +42,10 @@ frames
 history
 getComputedStyle()
 innerHeight         done 
-innerWidth            => done 
+innerWidth          => done 
 length              =>this return the how many number of the frame number in the window 
-localStorage      =>
-location
+localStorage        => done 
+location            =>
 matchMedia()
 moveBy()
 moveTo()
@@ -83,19 +82,18 @@ top
 
 */
 
-// here we see the all the methods of the  window object 
+// here we see the all the methods of the  window object
 
 // const bt = document.getElementById('btn');
 // const para = document.getElementById('p');
 
 // bt.addEventListener("click",()=>{
 
-    // alert("thanku  for clicling me ");
-    // confirm("are you confirm ");
+// alert("thanku  for clicling me ");
+// confirm("are you confirm ");
 
-    // window.open();
-    // this open new window 
-
+// window.open();
+// this open new window
 
 // })
 
@@ -106,19 +104,14 @@ top
 // const ind= prompt("enter your name");
 // console.log(ind);
 
-
-
-
-// 3 atob methods 
-// this is used for the decode the string 
+// 3 atob methods
+// this is used for the decode the string
 // let name = "ashutosh";
 // let encode = btoa(name);
 // console.log(encode);
 // console.log(atob(encode));
 
-//btoa this methods is used for the  encode the string 
-
-
+//btoa this methods is used for the  encode the string
 
 // const pt = setInterval(()=>{
 //     prompt("enter your name!");
@@ -126,8 +119,7 @@ top
 
 // clearInterval(pt,5000);
 
-
-// mini timing project 
+// mini timing project
 // const btn = document.getElementById('btn');
 // const para = document.getElementById('p');
 
@@ -141,36 +133,87 @@ top
 //     clearInterval(myTimer);
 // })
 
-
-
-
-
-
-// inner height: this return the height of the current window screen 
+// inner height: this return the height of the current window screen
 
 // const height = window.innerHeight
 // console.log(height);
 
-//innerwidth   this  return the height  of the current window 
+//innerwidth   this  return the height  of the current window
 // const width = window.innerWidth ;
 // console.log(width);
 
+// locastore in the js
+// this is the most imporant in the js
+// by this browser store the data in the browser
+
+// lets see the example
+// this  data is set by the setItem methods
+// and localstorage data is get  by the getItem methods
+
+// const para = document.getElementById('p');
+
+// window.localStorage.setItem("name","ashutosh kumar singh");
+// para.innerText = localStorage.getItem("name");
+
+//remove the localstorage items
+
+// localStorage.removeItem("name");
+
+// console.log(localStorage.getItem("name"));
+
+//clear the localstorage
+// localStorage.clear();
+
+// localsotage is the typeof the obeject that store the data in the key value pairs
+//no expiration time
+// console.log(typeof window.localStorage);
+
+// location   this most important
+// location is not a function
+// this is object that is provided in to the window object
+
+const b = document.getElementById("btn");
+const b1 = document.getElementById("btn1");
+
+const currentPage = window.location;
+console.log(typeof currentPage);
+
+const url = window.location.href; // this gives the url in string fomate
+console.log(typeof url);
+
+b.addEventListener("click", () => {
+  location.href = "./about.html";
+});
+
+//  here we see the host name of the domain
+const hostName = window.location.hostname;
+console.log(hostName);
+// string
+// window.js:218 127.0.0.1
+
+// pathname
+const path = window.location.pathname;
+console.log(path);
+const curl = `${hostName}${path}`;
+console.log(curl);
+
+// protocol
+// this is set of rules that  provide the sequrity
+
+const protcol = location.protocol;
+console.log(protcol); // http
+// http -> hyper text transfer protocol
+
+// location.assign
+const assign = location.assign;
+console.log(assign);
+
+// ⭐⭐⭐example 
 
 
-// locastore in the js 
-// this is the most imporant in the js 
-// by this browser store the data in the browser 
+// function newDoc() {
+//   b1.addEventListener("click", () => {
+//     location.assign("https://www.w3schools.com/sql/default.asp");
+//   });
+// }
 
-// lets see the example 
-// this  data is set by the setItem methods 
-// and localstorage data is get  by the getItem methods 
-
-const para = document.getElementById('p');
-
-window.localStorage.setItem("name","ashutosh kumar singh");
-para.innerText = localStorage.getItem("name");
-
-
-// localsotage is the typeof the obeject that store the data in the key value pairs 
-
-console.log(typeof window.localStorage);
