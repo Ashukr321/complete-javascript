@@ -234,7 +234,7 @@ top
 
 
 //select the btn 
-const b = document.getElementById("btn");
+// const b = document.getElementById("btn");
 
 // here we used the history object 
 
@@ -285,17 +285,17 @@ const b = document.getElementById("btn");
 
 // here we see the example 
 
-const key = prompt("enter your key for session storage");
-const value = prompt("enter  the value of your key  for session storage ");
+// const key = prompt("enter your key for session storage");
+// const value = prompt("enter  the value of your key  for session storage ");
 
 
-const data = sessionStorage.setItem(key,value);
-alert(sessionStorage.getItem(key));
+// const data = sessionStorage.setItem(key,value);
+// alert(sessionStorage.getItem(key));
 
 
 
 // clear methods 
 // to clear all the data from the sessionstorage in the js 
 
-sessionStorage.clear();
+// sessionStorage.clear();
 
