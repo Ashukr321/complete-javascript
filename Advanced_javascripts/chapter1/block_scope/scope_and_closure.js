@@ -51,5 +51,8 @@
 
 
 // module scope 
-let a = 4; 
-console.log(a);
+// let a = 4; 
+// console.log(a);
+
+
+// closure in the  js 
